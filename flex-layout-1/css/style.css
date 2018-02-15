@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+  flex-wrap: wrap;
+  align-content: center
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(top, #222, #333);
+}
+
+[class$="block"] {
+  margin: 16px;
+  padding: 4px;
+  
+  background-color: #e7e7e7;
+  width: 104px;
+  height: 104px;
+  object-fit: contain;
+  
+  border-radius: 10%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-block {
+  background: orange;
+}
+
+.second-block {
+  background: red;
+}
+
+.third-block {
+  background: aqua;
+}

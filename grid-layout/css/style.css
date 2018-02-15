@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  background: linear-gradient(top, #222, #333);
+}
+
+[class$='cell'] {
+  margin: 16px;
+  padding: 4px;
+  border-radius: 2%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+[class$='grid'] {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+
+
+.first-grid .Grid-cell {
+  background: aqua;
+  flex: 1;
+}
+
+.second-grid .Grid-cell {
+  background: orange;
+  flex: 1;
+}
+
+.third-grid .Grid-cell {
+  background: lightgreen;
+  flex: 1;
+}
+
+.fourth-grid .Grid-cell {
+  background: lightgrey;
+  flex: 1;
+}

@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  background: linear-gradient(top, #222, #333);
+}
+
+[class$='Grid'] {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Grid-cell {
+  display: flex;
+  flex: 1;
+  margin: 16px;
+  padding: 2px;
+  boarder: 5px solid black;
+  justify-content: center;
+}
+
+.Grid-cell.u-full {
+  flex: 0 0 100%;
+}
+
+.Grid-cell.u-1of2 {
+  flex: 0 0 50%;
+}
+
+.Grid-cell.u-1of3 {
+  flex: 0 0 33.3333%;
+}
+
+.Grid-cell.u-1of4 {
+  flex: 0 0 25%;
+}
+
+.First-Grid .Grid-cell{
+  background: aqua;
+}
+
+.Second-Grid .Grid-cell{
+  background: orange;
+}
+
+.Third-Grid .Grid-cell{
+  background: lightgreen;
+}

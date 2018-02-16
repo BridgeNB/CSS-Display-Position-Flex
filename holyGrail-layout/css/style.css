@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+}
+body .header, body .footer {
+  width: 100%;
+  height: 40px;
+  background: grey;
+  text-align: center;
+}
+body .HolyGrail-body {
+  flex: 1 0 auto;
+  display: flex;
+}
+body .HolyGrail-body .content {
+  flex: 1;
+  background: lavenderBlush;
+  text-align: center;
+}
+body .HolyGrail-body .nav, body .HolyGrail-body .aside {
+  flex: 0 0 12em;
+}
+body .HolyGrail-body .nav {
+  width: 100px;
+  order: -1;
+  background: lightcyan;
+}
+body .HolyGrail-body .aside {
+  width: 100px;
+  background: lightCoral;
+}

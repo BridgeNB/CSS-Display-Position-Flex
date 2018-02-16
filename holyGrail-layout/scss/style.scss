@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+  
+  .header, .footer {
+    width: 100%;
+    height: 40px;
+    background: grey;
+    text-align: center;
+  }
+  
+  .HolyGrail-body {
+    flex: 1 0 auto;
+    display: flex;
+    .content {
+      flex: 1;
+      background: lavenderBlush;
+      text-align: center;
+    }
+    .nav, .aside {
+      flex: 0 0 12em;
+    }
+    .nav{
+      width: 100px;
+      order: -1;
+      background: lightcyan;
+    }
+    .aside{
+      width: 100px;
+      background: lightCoral;
+    }
+  }
+}
